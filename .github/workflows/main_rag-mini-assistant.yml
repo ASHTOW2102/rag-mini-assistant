@@ -30,7 +30,7 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r backend/requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -58,4 +58,5 @@ jobs:
         with:
           app-name: 'rag-mini-assistant'
           slot-name: 'Production'
+
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_63E569D681B74FBE9F22F97AF437880E }}
