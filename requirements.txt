@@ -1,6 +1,0 @@
-fastapi
-uvicorn
-sentence-transformers
-faiss-cpu
-openai
-PyPDF2
