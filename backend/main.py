@@ -7,21 +7,21 @@ import openai
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file if it exists
+
 load_dotenv()
 
-# Load OpenAI API key from environment variable
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app = FastAPI()
 
-# Load chunks and embeddings
+
 chunks = [line.strip() for line in open("chunks_proc.txt", encoding="utf-8")]
 embeddings = np.load("embeddings.npy")
 index = faiss.read_index("faiss_index.bin")
-model = SentenceTransformer('all-MiniLM-L6-v2')  # For embedding queries
+model = SentenceTransformer('all-MiniLM-L6-v2')  
 
-# Pydantic request model for automatic Swagger UI handling
+
 class AskRequest(BaseModel):
     question: str
 
