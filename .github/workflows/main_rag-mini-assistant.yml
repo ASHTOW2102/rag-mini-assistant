@@ -56,6 +56,12 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
+<<<<<<< HEAD
           app-name: "rag-mini-assistant"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_17ACDB4223434E1D83C348099A512EDA }}
+=======
+          app-name: 'rag-mini-assistant'
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3E816048CB114FD3919E1952DA27E5C3 }}
+>>>>>>> 083a18da0a738511ac200d3d6fab5c1fbd7d1388
