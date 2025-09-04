@@ -58,4 +58,4 @@ jobs:
         with:
           app-name: 'rag-mini-assistant'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_17ACDB4223434E1D83C348099A512EDA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3E816048CB114FD3919E1952DA27E5C3 }}
