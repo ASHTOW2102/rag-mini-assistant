@@ -5,3 +5,4 @@ faiss-cpu
 openai
 PyPDF2
 uvicorn[standard]
+fastapi[standard]
